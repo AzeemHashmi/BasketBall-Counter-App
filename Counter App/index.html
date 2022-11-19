@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BasketBall Counter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&family=Oxygen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sub-container">
+        <div class="points-container">
+          <div class="left-container">
+            <div class="label">Home</div>
+            <div id="homePoints" class="points">0</div>
+            <div class="btn-grp">
+              <button onclick="HomePoints(1)" class="point-btn">+1</button>
+              <button onclick="HomePoints(2)" class="point-btn">+2</button>
+              <button onclick="HomePoints(3)" class="point-btn">+3</button>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="label">Guest</div>
+            <div id="guestPoints" class="points">0</div>
+            <div class="btn-grp">
+              <button onclick="GuestPoints(1)" class="point-btn">+1</button>
+              <button onclick="GuestPoints(2)" class="point-btn">+2</button>
+              <button onclick="GuestPoints(3)" class="point-btn">+3</button>
+            </div>
+          </div>
+        </div>
+        <button class="reset-btn" onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
